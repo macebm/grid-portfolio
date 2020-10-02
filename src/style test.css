@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: #3a405a;
+    color: #efd2cb;
+    font-family: 'Montserrat', arial, sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  header {
+    background: #4a6670;
+    padding: 3rem;
+  }
+  
+  a {
+    color: #efd2cb;
+    text-decoration: none;
+    padding-right: 20px;
+  }
+  a:hover {
+    color: #c7a27c;
+  }
+  nav {
+    padding: 20px 0;
+  }
+  footer {
+    padding: 3rem;
+  }
+  
+  .logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  
+  .logo > span {
+    font-weight: 700;
+  }
+  
+  .main-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 10px;
+    height: 100vh;
+    grid-auto-flow: dense;
+    background-color: white;
+  }
+  
+.wide{
+    background-color: hotpink;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.tall{
+    background-color: orange;
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.large{
+    background-color: blue;
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+.small{
+    background-color: purple;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.medium{
+    background-color: green;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
